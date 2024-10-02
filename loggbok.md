@@ -18,6 +18,13 @@ Science
 Ai
 Cv
 
+__ Colors __
+Blue
+Red
+White
+Gray
+Black
+
 
 2. Search up websites that has this desired layout.
 Skis ut an layout ide.
@@ -45,3 +52,12 @@ Skriv även sådant som du måste arbeta med nästa pass.
 Write down key words. Find websites that fit the keywords.
 
 To next lesson: Look up html and css code for the websites chosen.
+
+# Second lesson
+
+Look up html code.
+Then CSS code.
+Choose an color scheme.
+
+To next lesson: Fix problem with CSS. Continue coding html. Choose a more concrete color scheme.
+
