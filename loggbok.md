@@ -61,3 +61,9 @@ Choose an color scheme.
 
 To next lesson: Fix problem with CSS. Continue coding html. Choose a more concrete color scheme.
 
+# Third lesson
+
+Worked on html and css fixing the css not working.
+
+To next lesson: work more on css and html + color scheme
+
