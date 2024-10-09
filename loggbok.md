@@ -67,3 +67,9 @@ Worked on html and css fixing the css not working.
 
 To next lesson: work more on css and html + color scheme
 
+# Fourth lesson
+
+Worked more on the html and css. Currently trying to fix so that the sidebar roles with the page when a certain point is reached.
+
+To next lesson: try to fix the sidebar.
+
