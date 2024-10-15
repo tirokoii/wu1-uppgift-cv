@@ -20,19 +20,34 @@ h2 {
 
 .sidebar {
     padding-bottom: 19ch;
-    width: min(38% - 3rem, var(--container-max, 14ch));
-    position: relative;
-    transition: all 0.3s ease;
-    z-index: 0;
+    position: absolute;
+    width: min(38% - 3rem, var(--container-max, 18ch));
+    z-index: 2;
     left: 0;
     background-color: rgb(126, 191, 235);
     overflow: hidden;
     padding-top: 2ch;
     float: left;
+    scrollbar-width: none;
 }
 
-.sidebar.large {
-    width: min(50% - 3rem, var(--container-max, 20ch));
+.sidebar a {
+    background-color: rgb(84, 157, 221);
+    margin-top: 1ch;
+    border: 0.5ch, solid, rgba(75, 80, 139, 0.632);
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.sidebar a:hover {
+    background-color: rgb(161, 199, 232);
+    border-color: rgb(112, 147, 177);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 a {
@@ -54,9 +69,12 @@ p {
 }
 
 img {
-    width: 80%;
+    width: 70%;
     border-radius: 20ch;
-    margin-left: 1.2ch;
+    margin-left: 2.3ch;
+    margin-bottom: 3ch;
+    margin-top: 2ch;
+    border: 0.3ch, solid, black;
 }
 
 .name {
@@ -71,19 +89,19 @@ img {
 }
 
 .nameHeader {
-    background-color: rgb(78, 223, 223);
+    background-color: rgb(183, 218, 242);
     text-align: center;
-    z-index: 3;
+    z-index: 0;
     position: relative;
     padding: 1ch;
 }
 
 nav {
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
     top: 0;
     z-index: 2;
     width: 100%;
-    padding: 10px;
+    padding: 0.1ch;
 }

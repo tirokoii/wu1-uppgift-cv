@@ -16,13 +16,7 @@
     <!--Image if time-->
 </header>
 
-<header class="nameHeader">
-    <h1 class="name">Clovis Bray I</h1>
-    <h4 class="underText">Human kinds redemption, Innovator and Visionary Leader</h4>
-</header>
-
-
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
     <img src="images/clovisBrayHead.png" alt="Clovis bray I">
     <p></p>
     <a href="#Top">Top</a>
@@ -33,6 +27,13 @@
     <a href="#Skills">Skills</a>
     <a href="#References">References</a>
 </div>
+
+<header class="nameHeader">
+    <h1 class="name">Clovis Bray I</h1>
+    <h4 class="underText">Human kinds redemption, Innovator and Visionary Leader</h4>
+</header>
+
+
 <main>
     <article>
         <div id="About">
@@ -197,6 +198,21 @@
     </article>
 </main>
 
+<script>
+    window.onscroll = function() {stickySidebar()};
+
+    const sidebar = document.getElementById("sidebar");
+    const stickyOffset = 92;
+
+    function stickySidebar() {
+        if (window.pageYOffset > stickyOffset) {
+            sidebar.classList.add("sticky");
+        } else {
+            sidebar.classList.remove("sticky")
+        }
+    }
+
+</script>
 
 </body>
 </html>

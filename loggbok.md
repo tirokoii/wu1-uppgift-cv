@@ -73,3 +73,8 @@ Worked more on the html and css. Currently trying to fix so that the sidebar rol
 
 To next lesson: try to fix the sidebar.
 
+# Fifth lesson
+
+Fixed the sidebar, is now scrollable and scrolls when a certain point is reached. Fixed som colors and sidebar style.
+
+To next lesson: fix more with colors and style. Need to decide exactly which colors should be where.
