@@ -9,7 +9,8 @@
 <body>
     <nav>
         <h1>
-            Hello
+            <a href="index.html">Home</a>
+            <a href="CV.html">CV</a>
         </h1>
     </nav>
 <header>
@@ -17,7 +18,7 @@
 </header>
 
 <div class="sidebar" id="sidebar">
-    <img src="images/clovisBrayHead.png" alt="Clovis bray I">
+    <img src="images/clovis.bray.logo.head.svg" alt="Clovis bray I">
     <p></p>
     <a href="#Top">Top</a>
     <a href="#About">About</a>
@@ -202,7 +203,14 @@
     window.onscroll = function() {stickySidebar()};
 
     const sidebar = document.getElementById("sidebar");
-    const stickyOffset = 92;
+    
+    let stickyOffset;
+
+    if (window.innerWidth < 600) {
+        stickyOffset = 109;
+    } else {
+        stickyOffset = 162;
+    }
 
     function stickySidebar() {
         if (window.pageYOffset > stickyOffset) {

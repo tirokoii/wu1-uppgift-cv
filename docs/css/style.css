@@ -4,10 +4,11 @@ body {
     line-height: 1.5;
     margin: 0;
     overflow-x: hidden;
+    background-color: #f7f7f7;
 }
 
 main {
-    width: min(65% - 3rem, var(--container-max, 80ch));
+    width: min(60% - 3rem, var(--container-max, 80ch));
     margin-inline: auto;
     padding-left: 10ch;
 }
@@ -21,10 +22,10 @@ h2 {
 .sidebar {
     padding-bottom: 19ch;
     position: absolute;
-    width: min(38% - 3rem, var(--container-max, 18ch));
+    width: min(34% - 3rem, var(--container-max, 18ch));
     z-index: 2;
     left: 0;
-    background-color: rgb(126, 191, 235);
+    background-color: #00b4d8;
     overflow: hidden;
     padding-top: 2ch;
     float: left;
@@ -32,7 +33,7 @@ h2 {
 }
 
 .sidebar a {
-    background-color: rgb(84, 157, 221);
+    background-color: #0077b6;
     margin-top: 1ch;
     border: 0.5ch, solid, rgba(75, 80, 139, 0.632);
     border-left: 0;
@@ -40,9 +41,12 @@ h2 {
     border-bottom: 0;
 }
 
+
 .sidebar a:hover {
-    background-color: rgb(161, 199, 232);
+    background-color: #caf0f8;
     border-color: rgb(112, 147, 177);
+    color: #0077b6;
+    transition: 0.2s;
 }
 
 .sticky {
@@ -60,21 +64,19 @@ a {
     line-height: 2;
 }
 
-a:hover {
-    color: aliceblue;
-}
-
 p {
     color: rgb(71, 71, 71);
 }
 
 img {
     width: 70%;
-    border-radius: 20ch;
-    margin-left: 2.3ch;
+    border-radius: 200ch;
+    margin-left: 8%;
     margin-bottom: 3ch;
     margin-top: 2ch;
-    border: 0.3ch, solid, black;
+    opacity: 0.9;
+    padding: 1ch;
+    background-color: rgb(255, 255, 255);
 }
 
 .name {
@@ -83,17 +85,21 @@ img {
 }
 
 .underText {
-    color: rgb(107, 100, 100);
+    color: #adf3ff;
     margin: 0;
     padding-bottom: 1ch;
+    font-style: italic;
+    font-weight: 200;
 }
 
 .nameHeader {
-    background-color: rgb(183, 218, 242);
+    color: #ffc13a;
+    background-color: #1e3981;
     text-align: center;
     z-index: 0;
-    position: relative;
+    position: sticky;
     padding: 1ch;
+    margin-left: min(34% - 3rem, var(--container-max, 18ch));
 }
 
 nav {
@@ -104,4 +110,23 @@ nav {
     z-index: 2;
     width: 100%;
     padding: 0.1ch;
+}
+
+.sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #ffc966;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60;
+}
+
+@media (max-width: 560px) {
+    .sidebar {
+        font-size: 1rem;
+    }
 }

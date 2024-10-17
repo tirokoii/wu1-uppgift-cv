@@ -19,10 +19,15 @@ Ai
 Cv
 
 __ Colors __
-Blue
-Red
-White
-Gray
+Blue - wisdom - technology #03045e
+#0077b6
+#00b4d8
+#90e0ef
+#caf0f8
+
+Yellow - opportunity #FFC709
+White #f7f7f7
+Gray #808080
 Black
 
 
@@ -78,3 +83,9 @@ To next lesson: try to fix the sidebar.
 Fixed the sidebar, is now scrollable and scrolls when a certain point is reached. Fixed som colors and sidebar style.
 
 To next lesson: fix more with colors and style. Need to decide exactly which colors should be where.
+
+# Sixth lesson
+
+Fixed an sidebar problem where the text went to much into the container. Changed the picture to the logo instead. Began looking at how to do an hamburger menu. And fixed colors again.
+
+To next lesson: Do the hamburger menu. And try to add logo on top.
