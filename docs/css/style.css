@@ -8,24 +8,36 @@ body {
 }
 
 main {
-    width: min(60% - 3rem, var(--container-max, 80ch));
+    width: min(65% - 3rem, var(--container-max, 80ch));
     margin-inline: auto;
     padding-left: 10ch;
 }
 
-h2 {
-    color: rgb(27, 27, 116);
-    background-color: rgb(255, 243, 199); 
+header {
+    background-color: #ffffff;
+    display: flex;
     padding: 1ch;
+    border: 4ch, solid, rgb(15, 15, 67);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+h2 {
+    color: rgb(6, 57, 145);
+    background-color: rgb(255, 244, 206); 
+    border-radius: 5ch;
+    padding: 1ch;
+    padding-left: 2ch;
 }
 
 .sidebar {
     padding-bottom: 19ch;
     position: absolute;
-    width: min(34% - 3rem, var(--container-max, 18ch));
+    width: min(35% - 3rem, var(--container-max, 16ch));
     z-index: 2;
     left: 0;
-    background-color: #00b4d8;
+    background-color: #23b5dd;
     overflow: hidden;
     padding-top: 2ch;
     float: left;
@@ -33,19 +45,20 @@ h2 {
 }
 
 .sidebar a {
-    background-color: #0077b6;
+    background-color: #049fc2;
     margin-top: 1ch;
-    border: 0.5ch, solid, rgba(75, 80, 139, 0.632);
+    border: 0.5ch, solid, rgba(74, 127, 165, 0.632);
     border-left: 0;
     border-top: 0;
     border-bottom: 0;
+    color: #2d2c42;
 }
 
 
 .sidebar a:hover {
-    background-color: #caf0f8;
+    background-color: #63cfe4;
     border-color: rgb(112, 147, 177);
-    color: #0077b6;
+    color: #38557b;
     transition: 0.2s;
 }
 
@@ -71,45 +84,52 @@ p {
 img {
     width: 70%;
     border-radius: 200ch;
-    margin-left: 8%;
+    margin-left: 12%;
     margin-bottom: 3ch;
     margin-top: 2ch;
     opacity: 0.9;
-    padding: 1ch;
-    background-color: rgb(255, 255, 255);
+    padding: 0.4ch;
+    background-color: rgb(154, 231, 255);
+}
+
+.logo {
+    border-radius: 0;
+    width: 14ch;
+    height: 10ch;
+    margin-left: 4ch !important;
+    background-color: transparent;
+    display: inline-flex !important;
+    margin: 0 !important;
+    padding-bottom: 0;
+    margin-right: min(100% - 16rem, var(--container-max, 90ch)) !important;
 }
 
 .name {
     font-size: 3rem;
     margin: 0;
+    margin-left: min(10% - 1rem, var(--container-max, 10ch));
+    margin-top: 1ch;
+    text-align: left;
 }
 
 .underText {
-    color: #adf3ff;
+    color: #69dfff;
     margin: 0;
+    margin-left: min(20% - 4rem, var(--container-max, 10ch));;
     padding-bottom: 1ch;
     font-style: italic;
     font-weight: 200;
+    text-align: left;
 }
 
 .nameHeader {
-    color: #ffc13a;
+    color: #f7fdff;
     background-color: #1e3981;
     text-align: center;
     z-index: 0;
     position: sticky;
-    padding: 1ch;
-    margin-left: min(34% - 3rem, var(--container-max, 18ch));
-}
-
-nav {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: relative;
-    top: 0;
-    z-index: 2;
-    width: 100%;
-    padding: 0.1ch;
+    padding: 1ch; 
+    margin-left: max(1% - 5rem, var(--container-max, 15ch));;
 }
 
 .sideNav {
@@ -118,11 +138,61 @@ nav {
     position: fixed;
     z-index: 4;
     top: 0;
-    left: 0;
-    background-color: #ffc966;
+    right: 0;
+    background-color: #2f6c9e;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60;
+    padding-top: 6ch;
+    
+}
+
+.sideNav a {
+    padding: 1ch, 1ch, 1ch, 5ch;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    background-color: #347db5;
+    border: 0.5ch, solid, rgb(68, 153, 207);
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    margin-top: 2ch;
+    margin-bottom: 2ch;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+    border-color: #7eb3df;
+    background-color: #368ac6;
+}
+
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1.5ch;
+    font-size: 3.5ch;
+    margin-left: 4ch;
+}
+
+span {
+    font-size: 2.2rem; 
+    cursor: pointer;
+    margin-bottom: 1ch;
+    margin-left: 1ch;
+    margin-top: 1.5ch;
+    color: #040d28;
+}
+
+@media screen and (max-height: 450px) {
+    .sideNav {
+        padding-top: 2ch;
+    }
+
+    .sideNav a {
+        font-size: 1.2ch;
+    }
 }
 
 @media (max-width: 560px) {

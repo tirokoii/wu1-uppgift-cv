@@ -89,3 +89,9 @@ To next lesson: fix more with colors and style. Need to decide exactly which col
 Fixed an sidebar problem where the text went to much into the container. Changed the picture to the logo instead. Began looking at how to do an hamburger menu. And fixed colors again.
 
 To next lesson: Do the hamburger menu. And try to add logo on top.
+
+# Att home 1
+
+Fixed the links to the different pages and added the logo and hamburger menu.
+
+To next time: Fix the other pages, add an Application letter, about and home.
