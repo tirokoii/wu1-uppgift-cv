@@ -4,67 +4,31 @@ body {
     line-height: 1.5;
     margin: 0;
     overflow-x: hidden;
-    background-color: #f7f7f7;
+    background-color: #1baad1;
+    transition: 0.2s;
 }
 
 main {
-    width: min(65% - 3rem, var(--container-max, 80ch));
+    width: min(100% - 3rem, var(--container-max, 80ch));
     margin-inline: auto;
-    padding-left: 10ch;
+    margin-top: 10ch;
+    padding-top: 5ch;
+    background-color: #f1f1f1;
+    padding-bottom: 9ch;
+    margin-bottom: 15ch;
+    border: 1ch, solid #347db5;
+    border-style: double;
+    box-shadow: 0px 0px 0px 20px #263b7c;
 }
 
 header {
     background-color: #ffffff;
     display: flex;
     padding: 1ch;
-    border: 4ch, solid, rgb(15, 15, 67);
+    border: 4ch solid rgb(15, 15, 67);
     border-top: none;
     border-left: none;
     border-right: none;
-}
-
-h2 {
-    color: rgb(6, 57, 145);
-    background-color: rgb(255, 244, 206); 
-    border-radius: 5ch;
-    padding: 1ch;
-    padding-left: 2ch;
-}
-
-.sidebar {
-    padding-bottom: 19ch;
-    position: absolute;
-    width: min(35% - 3rem, var(--container-max, 16ch));
-    z-index: 2;
-    left: 0;
-    background-color: #23b5dd;
-    overflow: hidden;
-    padding-top: 2ch;
-    float: left;
-    scrollbar-width: none;
-}
-
-.sidebar a {
-    background-color: #049fc2;
-    margin-top: 1ch;
-    border: 0.5ch, solid, rgba(74, 127, 165, 0.632);
-    border-left: 0;
-    border-top: 0;
-    border-bottom: 0;
-    color: #2d2c42;
-}
-
-
-.sidebar a:hover {
-    background-color: #63cfe4;
-    border-color: rgb(112, 147, 177);
-    color: #38557b;
-    transition: 0.2s;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
 }
 
 a {
@@ -78,7 +42,30 @@ a {
 }
 
 p {
+    padding-left: 10%;
     color: rgb(71, 71, 71);
+    margin: 0;
+    margin-right: 10%;
+}
+
+h4 {
+    margin: 0;
+    margin-top: 1ch;
+}
+
+h1 {
+    margin-left: 2.5%;
+    width: 80%;
+    color: rgb(6, 57, 145);
+    background-color: rgb(255, 244, 206); 
+    border-radius: 5ch;
+    padding: 1ch;
+    padding-left: 2ch;
+}
+
+hr {
+    margin-left: 10%;
+    width: 80%;
 }
 
 img {
@@ -104,46 +91,18 @@ img {
     margin-right: min(100% - 16rem, var(--container-max, 90ch)) !important;
 }
 
-.name {
-    font-size: 3rem;
-    margin: 0;
-    margin-left: min(10% - 1rem, var(--container-max, 10ch));
-    margin-top: 1ch;
-    text-align: left;
-}
-
-.underText {
-    color: #69dfff;
-    margin: 0;
-    margin-left: min(20% - 4rem, var(--container-max, 10ch));;
-    padding-bottom: 1ch;
-    font-style: italic;
-    font-weight: 200;
-    text-align: left;
-}
-
-.nameHeader {
-    color: #f7fdff;
-    background-color: #1e3981;
-    text-align: center;
-    z-index: 0;
-    position: sticky;
-    padding: 1ch; 
-    margin-left: max(1% - 5rem, var(--container-max, 15ch));;
-}
-
 .sideNav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 4;
+    z-index: 10;
     top: 0;
     right: 0;
     background-color: #2f6c9e;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 6ch;
-    
+    filter: none;
 }
 
 .sideNav a {
@@ -154,18 +113,20 @@ img {
     display: block;
     transition: 0.3s;
     background-color: #347db5;
-    border: 0.5ch, solid, rgb(68, 153, 207);
+    border: 0.5ch solid rgb(68, 153, 207);
     border-right: none;
     border-bottom: none;
     border-top: none;
     margin-top: 2ch;
     margin-bottom: 2ch;
+    filter: none;
 }
 
 .sideNav a:hover {
     color: #f1f1f1;
     border-color: #7eb3df;
     background-color: #368ac6;
+    filter: none;
 }
 
 .sideNav .closebtn {
@@ -174,6 +135,7 @@ img {
     right: 1.5ch;
     font-size: 3.5ch;
     margin-left: 4ch;
+    filter: none;
 }
 
 span {
@@ -185,6 +147,12 @@ span {
     color: #040d28;
 }
 
+.apHeader {
+    line-height: 1;
+    color: #1a507c;
+    padding-left: 10%;
+}
+
 @media screen and (max-height: 450px) {
     .sideNav {
         padding-top: 2ch;
@@ -192,11 +160,5 @@ span {
 
     .sideNav a {
         font-size: 1.2ch;
-    }
-}
-
-@media (max-width: 560px) {
-    .sidebar {
-        font-size: 1rem;
     }
 }

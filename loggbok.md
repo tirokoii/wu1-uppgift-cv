@@ -95,3 +95,16 @@ To next lesson: Do the hamburger menu. And try to add logo on top.
 Fixed the links to the different pages and added the logo and hamburger menu.
 
 To next time: Fix the other pages, add an Application letter, about and home.
+
+# Att home 2
+
+Fixed an blur effect when in sidenav. And scale properties to look better. Began on the design of the homepage.
+
+To next time: Complete the homepage, begin on the application letter and about page.
+
+# Att home 3 
+
+Began and finished application letter and about page. Did some more on the homepage.
+
+To next time: Complete the homepage. Wave and validate the website. Host the website on github pages.
+

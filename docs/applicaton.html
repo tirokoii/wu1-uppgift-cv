@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application letter</title>
+    <link rel="stylesheet" href="css/application.css">
+</head>
+
+<body>
+
+    <div id="sidenav" class="sideNav">
+        <a style="margin: 0; background-color: inherit; border: none;" href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+
+        <a href="about.html">About</a>
+        <a href="CV.html">CV</a>
+        <a href="applicaton.html">Application</a>
+    </div>
+
+    <div id="bodyContent">
+        <header>
+            <a id="logo" class="logo" href="index.html">
+                <img class="logo" src="images/clovis.bray.logo.svg" alt="logo">
+            </a>
+            <span onclick="openNav()">&#9776;</span>
+        </header>
+
+        <main>
+            <h1>Application letter</h1>
+            <hr>
+            <br>
+
+            <div class="apHeader">
+                <h4>Clovis Bray I</h4>
+                <h4>Eventide ruins</h4>
+                <h4>(33) 01101011011010010110111001100111</h4>
+                <h4>clovis_bray_is_number_one@mail.ru</h4>
+                <h4>November 11, 3457</h4>
+                <br>
+                <h4>Commander Zavala</h4>
+                <h4>Vanguard commander</h4>
+                <h4>Vanguard</h4>
+                <h4>The Tower</h4>
+                <h4>Last City</h4>
+            </div>
+            <br><br><br>
+            <p>Dear Mr Zavala,</p>
+            <br>
+            <p>I am reaching out to you about the position of AI consultor that I found on helpus.com.</p>
+            <p>I am very interested in this position and I would appreciate it if you considered my application for this position.</p>
+            <br>
+            <p>In my previous experience, I have built and programmed AI robots with human consciousness.</p>
+            <p>I also have experience in managing a company when I was CEO of Clovis Bray for around 200 years and for the last 2000 years I have been in the position of AI god</p>
+            <p>Which shows that I have the capability for this position.</p>
+            <br>
+            <p>I have a strong sense of responsibility when it comes to my job, I always prioritize my work in every situation</p>
+            <p>Solving problems and coming up with clever solutions is one of my strongest properties.</p>
+            <p>I have always loved the challenging part of solving problems for others. Whenever someone needs a helping hand I feel that it is my duty to give it to them.</p>
+            <p>I believe that my strong sense of responsibility and problem solving skills will be a great asset to your Vanguard.</p>
+            <br>
+            <p>With my previous experiences in programming and science I can construct AI to aid with organising files in the database and aid with building ships that run on less fuel.</p>
+            <p>My connection to the database makes it possible for me to strengthen the Last City's forces both internal and external. My only weakness is that I can not be moved around where there is no computer.</p>
+            <p>Because my main consciousness is located on Europa and I'm capable of rebooting and copying my mind there is a low probability that my data will be destroyed.</p>
+            <p>Internal attacks from vex will not be any problem either considering my protection system is extremely complex.</p>
+            <p>I believe my future as an AI consultant is my best future.</p>
+            <br>
+            <p>I appreciate you taking the time to read and review this letter and hope to hear from you regarding the next steps in the hiring process.</p>
+            <p>If you have any questions or need additional information, please do not hesitate to contact me.</p>
+            <br>
+            <p>Sincerely,</p>
+            <p>Clovis Bray I</p>
+        </main>
+    </div>
+</body>
+
+<script>
+    const bodyContent = document.getElementById("bodyContent");
+    const sidenav = document.getElementById("sidenav");
+
+    function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+            bodyContent.style.filter = "blur(4px)";
+            bodyContent.style.opacity = "70%"
+            sidenav.style.filter = "blur(0px)";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            bodyContent.style.filter = "blur(0)";
+            bodyContent.style.opacity = "100%";
+            sidenav.style.filter = "blur(0)";
+        }
+</script>
+
+</html>
