@@ -1,11 +1,11 @@
-# Loggbok för CV
+# Loggbok for CV
 
-Här skriver jag en planering för mitt CV.
-Sedan skriver jag kring mitt arbete och hur det gick.
+Here im gonna write a plan form my CV.
+Later im gonna write about and how it went working on it.
 
 Skriv en kort planering först.
 
-## Planering
+## Plan
 
 Main quests:
 
@@ -110,3 +110,6 @@ Began and finished application letter and about page. Did some more on the homep
 
 To next time: Complete the homepage. Wave and validate the website. Host the website on github pages.
 
+### Att home 4
+
+Finished the homepage, added an icon for the website. Waved and vaildated the website and hosted on github.
