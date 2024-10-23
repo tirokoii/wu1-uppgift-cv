@@ -116,3 +116,5 @@ Finished the homepage, added an icon for the website. Waved and vaildated the we
 
 The validator gave me three diffrent errors, one that I shouldn not have a alt for some images like the logo and the cave image on the homepage. It also told me that I wrote to long of an alt on the image of the character. I thought that both these problems were not so much of an issue. So I just changed the name for the logo to Clovis Bray and the cave to "" or nothing. The Character image I just kept as it was because I read somewhere that if I use an picture I should give credits to the people who I took it from in the code somewhere, and I thought the alt would fit best.
 
+The mobile version isn't working properly.
+
