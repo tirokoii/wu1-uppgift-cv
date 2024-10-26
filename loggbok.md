@@ -113,3 +113,6 @@ To next time: Complete the homepage. Wave and validate the website. Host the web
 ### Att home 4
 
 Finished the homepage, added an icon for the website. Waved and vaildated the website and hosted on github.
+
+### Att home 5
+Made an temporary (or not) fix to the phone version not working. Aka taking away the sidebar for the time being, til I find a better solution.

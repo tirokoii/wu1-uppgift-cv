@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
     <link rel="icon" href="images/clovis.bray.logo.head.svg">
+    <title>CV</title>
     <link rel="stylesheet" href="css/CV.css">
 </head>
 
@@ -30,15 +30,18 @@
         </header>
     
         <div class="sidebar" id="sidebar">
-            <img src="images/clovisBrayHead.jpg" alt="Clovis bray I, screenshot from the destiny franchise that Bungie develops. Taken 2024 from an youtube video thumbnail &quot; Destiny 2 Beyond Light - Meeting Clovis Bray &#34; posted by The Phoenix on youtube 2021." >
-            <p></p>
-            <a href="#Top">Top</a>
-            <a href="#About">About</a>
-            <a href="#Contact">Contact</a> <!--Make dropdown to se contact information quickly-->
-            <a href="#Experience">Experience</a> <!--Make dropdown to see year and experience quicker-->
-            <a href="#Education">Education</a>
-            <a href="#Skills">Skills</a>
-            <a href="#References">References</a>
+
+            <div id="sidebarContent">
+                <img id="img" src="images/clovisBrayHead.jpg" alt="Clovis bray I, screenshot from the destiny franchise that Bungie develops. Taken 2024 from an youtube video thumbnail &quot; Destiny 2 Beyond Light - Meeting Clovis Bray &#34; posted by The Phoenix on youtube 2021." >
+                <p></p>
+                    <a id="a1" href="#Top">Top</a>
+                    <a id="a2" href="#About">About</a>
+                    <a id="a3" href="#Contact">Contact</a> 
+                    <a id="a4" href="#Experience">Experience</a>
+                    <a id="a5" href="#Education">Education</a>
+                    <a id="a6" href="#Skills">Skills</a>
+                    <a id="a7" href="#References">References</a>
+            </div>
         </div>
     
         <div class="nameHeader">
@@ -216,11 +219,13 @@
         const sidebar = document.getElementById("sidebar");
         const bodyContent = document.getElementById("bodyContent");
         const sidenav = document.getElementById("sidenav");
+        const point = document.getElementById("point");
+        const cross = document.getElementById("cross");
         
         let stickyOffset;
-
-        if (window.innerWidth < 730) {
-            stickyOffset = 175;
+    
+        if (window.innerWidth < 500) {
+            stickyOffset = 20;
         } else {
             stickyOffset = 172;
         }
@@ -232,7 +237,6 @@
                 sidebar.classList.remove("sticky")
             }
         }
-
 
         function openNav() {
             document.getElementById("sidenav").style.width = "250px";
@@ -247,6 +251,7 @@
             bodyContent.style.opacity = "100%";
             sidenav.style.filter = "blur(0)";
         }
+
 
     </script>
 

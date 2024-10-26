@@ -162,3 +162,18 @@ span {
         font-size: 1.2ch;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .apHeader {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
