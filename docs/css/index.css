@@ -25,6 +25,7 @@ header {
     background-color: #ffffff;
     z-index: 5;
     display: flex;
+    justify-content: space-between;
     padding: 1ch;
     border: 4ch solid rgb(15, 15, 67);
     border-top: none;
@@ -58,8 +59,8 @@ p {
     margin: 0;
     text-align: center;
     color: rgb(71, 71, 71);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 10%;
 }
 
 h1 {
@@ -169,7 +170,7 @@ span {
     font-size: 2.2rem; 
     cursor: pointer;
     margin-bottom: 1ch;
-    margin-left: 1ch;
+    margin-right: 1ch;
     margin-top: 1.5ch;
     color: #040d28;
 }
