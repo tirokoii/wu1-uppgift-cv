@@ -105,6 +105,7 @@ img {
     border: 1ch solid #ffffff;
     border-left: none;
     border-right: none;
+    opacity: 70%;
 }
 
 .logo {
@@ -173,6 +174,10 @@ span {
     margin-right: 1ch;
     margin-top: 1.5ch;
     color: #040d28;
+}
+
+footer {
+    background-color: #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
